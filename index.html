@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-theme.min.css" rel="stylesheet">
+  <script src="app.js"></script>
+  <title>Monkeys Writing Shakespeare</title>
+</head>
+
+<body onload="insertText();">
+  <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div id="intro">
+        <h1>Monkeys Writing Shakespeare (or Austen...)</h1>
+        <p>Following is the opening of Jane Austen's <em>Pride and Prejudice</em>. But with a twist... Every so often, a word will be replaced with another word of the same part of speech.</p>
+        <p>How long will it take the random word changes to repeat the original text?</p>
+        <p><em>This site uses a JavaScript app that chooses a random word in the text and searches <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">a list of the most common words in the English language classified by part of speech</a>. If the word is found in one of the lists, it is replaced by another word in the list. Then another random word is chosen, ad infinitum. Or ad tabbus closium. :)</em></p>
+      </div>
+      <hr/><br/>
+      <button onclick="keep_going = true; replace_random_word();">Go</button> <button onclick="stop();">Stop</button> <button onclick="stop(); insertText();">Reload</button><br/><br/>
+
+      <div id="shakespeare"></div>
+    </div>
+    <div class="col-md-2"></div>
+</body>
