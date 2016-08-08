@@ -41,6 +41,7 @@ function replace_random_word() {
   }
   console.log(random_word, random_word_no_punc, random_word_no_punc_no_quote);
 
+  // WORD REPLACEMENT LOOP
   // search word lists for target word
   // if present in a list, replace it with another word in that list
   if (nouns.includes(random_word_no_punc_no_quote)) {
@@ -60,7 +61,7 @@ function replace_random_word() {
   }
 
 
-  // still need to account for punctuation
+  // deal with punctuation
   if (random_word != random_word_no_punc && trailing_quote == false) {
     new_word += random_word[random_word.length-1];
   } else if (random_word != random_word_no_punc && trailing_quote == true) {
