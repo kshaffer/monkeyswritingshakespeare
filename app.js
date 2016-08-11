@@ -117,7 +117,7 @@ function replace_random_word() {
   // Repeat the proess until keep_going = false.
 
   if (keep_going == true) {
-    setTimeout('replace_random_word()', 100);
+    setTimeout('replace_random_word()', 50);
   }
 }
 
