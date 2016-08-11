@@ -15,6 +15,8 @@ var articles = ['a', 'an', 'the'];
 
 var surnames_pnp = ['Bennet', 'Bingley', 'Netherfield', 'Long']
 
+var pronouns = ['I', 'you', 'we', 'he', 'she', 'it', "y'all", 'they']
+
 // The first couple pages of Pride and Prejudice.
 
 var original_text = '<p> It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. </p>\n<p> However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families that he is considered as the rightful property of some one or other of their daughters. </p>\n<p> "My dear Mr. Bennet," said his lady to him one day, "have you heard that Netherfield Park is let at last?" </p>\n<p> Mr. Bennet replied that he had not. </p>\n<p> "But it is," returned she; "for Mrs. Long has just been here, and she told me all about it." </p>\n<p> Mr. Bennet made no answer. </p>\n<p> "Do not you want to know who has taken it?" cried his wife impatiently. </p>\n<p> "You want to tell me, and I have no objection to hearing it." </p>\n<p> This was invitation enough. </p>\n<p> "Why, my dear, you must know, Mrs. Long says that Netherfield is taken by a young man of large fortune from the north of England; that he came down on Monday in a chaise and four to see the place, and was so much delighted with it, that he agreed with Mr. Morris immediately; that he is to take possession before Michaelmas, and some of his servants are to be in the house by the end of next week." </p>\n<p> "What is his name?" </p>\n<p> "Bingley." </p>\n<p> "Is he married or single?" </p>\n<p> "Oh! single, my dear, to be sure! A single man of large fortune; four or five thousand a year. What a fine thing for our girls!" </p>\n<p> "How so? how can it affect them?" </p>';
@@ -115,7 +117,7 @@ function replace_random_word() {
   // Repeat the proess until keep_going = false.
 
   if (keep_going == true) {
-    setTimeout('replace_random_word()', 250);
+    setTimeout('replace_random_word()', 100);
   }
 }
 
