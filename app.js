@@ -74,8 +74,6 @@ function replace_random_word() {
     new_word = plural_nouns[Math.floor(Math.random() * plural_nouns.length)];
   } else if (adjectives.includes(random_word_no_punc_no_quote)) {
     new_word = adjectives[Math.floor(Math.random() * adjectives.length)];
-  } else if (articles.includes(random_word_no_punc_no_quote)) {
-    new_word = articles[Math.floor(Math.random() * articles.length)];
   } else if (surnames_pnp.includes(random_word_no_punc_no_quote)) {
     new_word = surnames_pnp[Math.floor(Math.random() * surnames_pnp.length)];
   } else {
