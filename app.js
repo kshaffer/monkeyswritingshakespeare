@@ -50,7 +50,7 @@ function replace_random_word() {
   // (which we'll need later).
 
   var random_word_no_punc = random_word.replace(',', '').replace('.', '').replace('?', '').replace('!', '').replace(';', '');
-  var random_word_no_punc_no_quote = random_word_no_punc.replace(/"/g, '');
+2  var random_word_no_punc_no_quote = random_word_no_punc.replace(/"/g, '');
   if (random_word[0] == '"') {
     leading_quote = true;
   } else {
@@ -60,8 +60,7 @@ function replace_random_word() {
     trailing_quote = true;
   } else {
     trailing_quote = false;
-  }
-  console.log(random_word, random_word_no_punc, random_word_no_punc_no_quote);
+  }  console.log(random_word, random_word_no_punc, random_word_no_punc_no_quote);
 
   // WORD REPLACEMENT LOOP
 
@@ -71,8 +70,7 @@ function replace_random_word() {
   if (nouns.includes(random_word_no_punc_no_quote)) {
     new_word = nouns[Math.floor(Math.random() * nouns.length)];
   } else if (plural_nouns.includes(random_word_no_punc_no_quote)) {
-    new_word = plural_nouns[Math.floor(Math.random() * plural_nouns.length)];
-  } else if (adjectives.includes(random_word_no_punc_no_quote)) {
+    new_word = plural_nouns[Math.floor(Math.random() * plural_nouns.length)];  } else if (adjectives.includes(random_word_no_punc_no_quote)) {
     new_word = adjectives[Math.floor(Math.random() * adjectives.length)];
   } else if (surnames_pnp.includes(random_word_no_punc_no_quote)) {
     new_word = surnames_pnp[Math.floor(Math.random() * surnames_pnp.length)];
@@ -113,7 +111,7 @@ function replace_random_word() {
   // Repeat the proess until keep_going = false.
 
   if (keep_going == true) {
-    setTimeout('replace_random_word()', 100);
+    setTimeout('replace_random_word()', 20);
   }
 }
 
