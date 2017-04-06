@@ -50,7 +50,7 @@ function replace_random_word() {
   // (which we'll need later).
 
   var random_word_no_punc = random_word.replace(',', '').replace('.', '').replace('?', '').replace('!', '').replace(';', '');
-2  var random_word_no_punc_no_quote = random_word_no_punc.replace(/"/g, '');
+  var random_word_no_punc_no_quote = random_word_no_punc.replace(/"/g, '');
   if (random_word[0] == '"') {
     leading_quote = true;
   } else {
